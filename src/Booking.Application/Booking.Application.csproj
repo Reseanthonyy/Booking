@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="12.1.1" />
+      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+      <PackageReference Include="Mapster" Version="10.0.7" />
+      <PackageReference Include="MediatR" Version="14.1.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.9" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Clients\Commands\" />
+      <Folder Include="Clients\Queries\" />
+      <Folder Include="Common\Behaviors\" />
+      <Folder Include="Common\Interfaces\" />
+      <Folder Include="Common\Models\" />
+      <Folder Include="Payments\Commands\" />
+      <Folder Include="Payments\Queries\" />
+      <Folder Include="Reservations\Commands\" />
+      <Folder Include="Reservations\Queries\" />
+      <Folder Include="Schedules\Commands\" />
+      <Folder Include="Schedules\Queries\" />
+      <Folder Include="Services\Commands\" />
+      <Folder Include="Services\Queries\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Booking.Domain\Booking.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
