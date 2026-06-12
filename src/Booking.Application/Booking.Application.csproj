@@ -11,23 +11,13 @@
       <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
       <PackageReference Include="Mapster" Version="10.0.7" />
       <PackageReference Include="MediatR" Version="14.1.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.9" />
       <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.9" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Clients\Commands\" />
-      <Folder Include="Clients\Queries\" />
-      <Folder Include="Common\Behaviors\" />
-      <Folder Include="Common\Interfaces\" />
-      <Folder Include="Common\Models\" />
-      <Folder Include="Payments\Commands\" />
-      <Folder Include="Payments\Queries\" />
-      <Folder Include="Reservations\Commands\" />
-      <Folder Include="Reservations\Queries\" />
-      <Folder Include="Schedules\Commands\" />
-      <Folder Include="Schedules\Queries\" />
-      <Folder Include="Services\Commands\" />
-      <Folder Include="Services\Queries\" />
+      <Folder Include="Services\Commands\Delete\" />
+      <Folder Include="Services\Commands\Update\" />
     </ItemGroup>
 
     <ItemGroup>

@@ -16,7 +16,9 @@ public sealed class Reservation : IAggregateRoot
     private readonly List<IDomainEvent> _domainEvents = new();
     public IReadOnlyCollection<IDomainEvent> DomainEvents => _domainEvents.AsReadOnly();
 
-    private Reservation(Guid clientId, Guid scheduleId, string? notes = null)
+    private Reservation(){}
+    
+    public Reservation(Guid clientId, Guid scheduleId, string? notes = null)
     {
         Id = Guid.NewGuid();
         ClientId = clientId;
