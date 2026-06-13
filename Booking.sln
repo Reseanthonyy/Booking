@@ -6,6 +6,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Application", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Infrastructure", "src\Booking.Infrastructure\Booking.Infrastructure.csproj", "{7EEF2ADF-9CE7-4F3A-ABB9-A0CB3ADD26A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Api", "src\Booking.Api\Booking.Api.csproj", "{AB19B946-9EFB-4ACE-824C-DA5C8B64E041}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1B90CAB8-64E5-40C2-B881-A2FE146FEE9F}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +31,9 @@ Global
 		{7EEF2ADF-9CE7-4F3A-ABB9-A0CB3ADD26A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EEF2ADF-9CE7-4F3A-ABB9-A0CB3ADD26A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EEF2ADF-9CE7-4F3A-ABB9-A0CB3ADD26A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB19B946-9EFB-4ACE-824C-DA5C8B64E041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB19B946-9EFB-4ACE-824C-DA5C8B64E041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB19B946-9EFB-4ACE-824C-DA5C8B64E041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB19B946-9EFB-4ACE-824C-DA5C8B64E041}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
