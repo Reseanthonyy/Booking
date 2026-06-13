@@ -3,6 +3,7 @@ using Booking.Api.Middleware;
 using Booking.Application;
 using Booking.Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi;
 using Serilog;
@@ -110,10 +111,10 @@ app.UseAuthorization();
 app.MapControllers();
 
 // Migrar automáticamente (opcional)
-// using (var scope = app.Services.CreateScope())
-// {
-//     var dbContext = scope.ServiceProvider.GetRequiredService<Booking.Infrastructure.Persistence.ApplicationDbContext>();
-//     await dbContext.Database.MigrateAsync();
-// }
+using (var scope = app.Services.CreateScope())
+{
+     var dbContext = scope.ServiceProvider.GetRequiredService<Booking.Infrastructure.Persistence.ApplicationDbContext>();
+     await dbContext.Database.MigrateAsync();
+}
 
 app.Run();

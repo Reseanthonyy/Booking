@@ -1,13 +1,13 @@
-﻿services:
+services:
   api:
     build:
       context: .
-      dockerfile: src/Booking.Api
+      dockerfile: src/Booking.Api/Dockerfile
     ports:
-      - "5000:80"
+      - "5000:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings_DefaultConnection=Host=db;Port=5432;Database=booking_db;Username=postgres;Password=postgres
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=booking_db;Username=postgres;Password=postgres
     depends_on:
       - db
     restart: on-failure
