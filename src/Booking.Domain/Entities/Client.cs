@@ -9,7 +9,7 @@ public sealed class Client : IAggregateRoot
     public string Name { get; private set; }
     public Email Email { get; private set; }
     public PhoneNumber PhoneNumber { get; private set; }
-    public DateTime CretedAt { get; private set; }
+    public DateTime CreatedAt { get; private set; }
     
     public Client() { } //Es para EF Core
 
@@ -25,5 +25,10 @@ public sealed class Client : IAggregateRoot
     {
         Email = email;
         PhoneNumber = phoneNumber;
+    }
+    
+    public void UpdateName(string name)
+    {
+        Name = name ?? throw new ArgumentNullException(nameof(name));
     }
 }

@@ -30,9 +30,7 @@ public class UpdateClientCommandHandler : IRequestHandler<UpdateClientCommand>
             email:new Email(request.Email),
             phoneNumber:new PhoneNumber(request.Phone));
         
-        typeof(Client)
-            .GetProperty(nameof(client.Name))!
-            .SetValue(client, request.Name);
+        client.UpdateName(request.Name);
 
         await _context.SaveChangesAsync(cancellationToken);
     }
